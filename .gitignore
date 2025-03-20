@@ -1,0 +1,55 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+coverage
+*.local
+
+/cypress/videos/
+/cypress/screenshots/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+*.tsbuildinfo
+
+# Environment Variables - VERY IMPORTANT!
+*.env*
+
+# Optional: If using Nuxt.js
+.nuxt/
+
+# Optional: Temporary directories
+tmp/
+temp/
+
+# Optional: Specific files/folders WITHIN the `public` directory (if needed)
+# public/test-data/
+# public/large-file.zip
+
+# Lock files (Choose ONE of the following blocks)
+# -- Commit lock files (recommended for applications): --
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# -- Do *NOT* commit lock files (recommended for libraries): --
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
