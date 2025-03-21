@@ -31,15 +31,6 @@ const sortFeatures = () => {
   inProgressFeatures.value = features.value.filter((feature) => feature.status === 'In Progress')
   plannedFeatures.value = features.value.filter((feature) => feature.status === 'Planned')
 }
-
-//For future development to allow dynamic updates to the status.
-//const updateFeatureStatus = (id, newStatus) => {
-//  const feature = features.value.find(f => f.id === id);
-//  if (feature) {
-//    feature.status = newStatus;
-//    sortFeatures(); // Re-sort after updating
-//  }
-//};
 </script>
 
 <template>
@@ -60,7 +51,6 @@ const sortFeatures = () => {
           >
             <h3>{{ feature.name }}</h3>
             <p>{{ feature.description }}</p>
-            <!--<button @click="updateFeatureStatus(feature.id, 'Completed')">Mark as Completed</button> -->
           </li>
         </ul>
       </section>
@@ -81,7 +71,6 @@ const sortFeatures = () => {
           <li v-for="feature in plannedFeatures" :key="feature.id" class="feature-item planned">
             <h3>{{ feature.name }}</h3>
             <p>{{ feature.description }}</p>
-            <!-- <button @click="updateFeatureStatus(feature.id, 'In Progress')">Start Progress</button> -->
           </li>
         </ul>
       </section>
